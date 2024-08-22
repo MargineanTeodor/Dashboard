@@ -1,0 +1,72 @@
+.cluster { 
+    display: flex;
+    flex-direction: column;
+}
+
+.cluster-instruments { 
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+.cluster-instruments-main { 
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 240px;
+}
+
+.cluster-instruments-secondary {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    top: -90px;
+    gap: 700px;
+    /* border: 1px solid rgb(190, 54, 54); */
+}
+
+.cluster-digital-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 120px;
+}
+
+.cluster-digital-text-container { 
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+    font-size: 25px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+}
+
+.cluster-digital-text-unit { 
+    position: relative; 
+    top: 47px; 
+    font-size: 15px;
+    color: white;
+    opacity: 0.5;
+}
+
+.cluster-map { 
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 220px;
+}
+
+.cluster-car { 
+    display: flex;
+    position: relative;
+    justify-content: center;
+    bottom: 210px;
+    /* border: 1px solid rgb(54, 190, 88); */
+}

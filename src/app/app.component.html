@@ -1,0 +1,64 @@
+<app-header />
+<app-cluster
+  [speed]="speedSliderValue"
+  [battery]="batterySliderValue"
+  [instantConsumption]="instantConsumptionSliderValue"
+  [memoryUsage]="memoryUsageSliderValue"
+  [mapX]="mapXSliderValue"
+  [mapY]="mapYSliderValue"
+  [cursorRotation]="cursorRotationSliderValue"
+  [carPosition]="carPositionSliderValue"
+/>
+<div class="sliders">
+  <div>
+    <p>
+      <label>Battery: </label>
+      <input type="range" min="0" max="100" [(ngModel)]="batterySliderValue" />
+    </p>
+  
+    <p>
+      <label>Speed: </label>
+      <input type="range" min="0" max="100" [(ngModel)]="speedSliderValue" />
+    </p>
+  
+    <p>
+      <label>Instant consumption: </label>
+      <input type="range" min="0" max="100" [(ngModel)]="instantConsumptionSliderValue" />
+    </p>
+
+    <p>
+      <label>Memory usage: </label>
+      <input type="range" min="0" max="100" [(ngModel)]="memoryUsageSliderValue" />
+    </p>
+  </div>
+
+  <div>
+    <p>
+      <label>Map X: </label>
+      <input type="range" min="0" max="100" [(ngModel)]="mapXSliderValue" />
+    </p>  
+
+    <p>
+      <label>Map Y: </label>
+      <input type="range" min="0" max="100" [(ngModel)]="mapYSliderValue" />
+    </p>
+  
+    <p>
+      <label>Cursor Rotation: </label>
+      <input type="range" min="0" max="360" [(ngModel)]="cursorRotationSliderValue" />
+    </p>
+    
+    <p>
+      <label>Car Position: </label>
+      <input type="range" min="-100" max="100" [(ngModel)]="carPositionSliderValue" />
+    </p>
+  </div>
+</div>
+<div>
+  <h2>System Metrics</h2>
+
+  <h3>Memory Usage: {{ memoryUsage }}%</h3>
+  <h3>CPU Usage: {{ cpuUsage }}%</h3>
+  <h3>Disk Usage: {{ diskUsage }}%</h3>
+</div>
+

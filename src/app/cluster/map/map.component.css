@@ -1,0 +1,25 @@
+#map-track-image-container { 
+    position: relative;
+    overflow: hidden;
+    mix-blend-mode: color-dodge; 
+    mask-image: radial-gradient(closest-side, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 90%);
+    -webkit-mask-image: radial-gradient(closest-side, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 90%);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+}
+
+#map-track-image {
+    position: absolute;
+}
+
+.map-cursor { 
+    position: absolute;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+}
+
+.map-container { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
